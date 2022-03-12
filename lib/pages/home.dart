@@ -34,7 +34,7 @@ class _HomeState extends State<Home> {
   String _userTodo = '';
   String _emptyInfo = 'Тут пока ничего нет';
 
-  //считать данные с файла при загрузке
+  //считать данные с файла при загрузке-
   @override
   void initState() {
     super.initState();
