@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/pages/home.dart';
-import 'package:todo_app/utils/totoStorage.dart';
+import 'package:todo_app/pages/mainScreen.dart';
 
 void main() => runApp(MaterialApp(
   theme: ThemeData(
@@ -11,5 +11,9 @@ void main() => runApp(MaterialApp(
       secondary: Colors.yellow
     )
   ),
-  home: Home(storage: ToDoStorage()),
+  initialRoute: '/',
+  routes: {
+    '/': (context) => const MainScreen(),
+    '/todo': (context) => const Home(),
+  },
 ));
